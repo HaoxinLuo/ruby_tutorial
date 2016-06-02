@@ -1,7 +1,13 @@
 == NOTES
-* camel case for controller (classes)?
+* camel case for classes
 * lower case for action names
+* snake case for files
 
+* rails server   => rails s
+* rails console  => rails c
+* rails generate => rails g
+* bundle install => bundle
+* rake test      => rake
 == README
 
 This README would normally document whatever steps are necessary to get the
