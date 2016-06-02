@@ -1,3 +1,7 @@
+== NOTES
+* camel case for controller (classes)?
+* lower case for action names
+
 == README
 
 This README would normally document whatever steps are necessary to get the
