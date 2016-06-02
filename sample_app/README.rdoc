@@ -1,13 +1,21 @@
 == NOTES
+= conventions
 * camel case for classes
 * lower case for action names
 * snake case for files
 
+= shortcuts/aliases
 * rails server   => rails s
 * rails console  => rails c
 * rails generate => rails g
 * bundle install => bundle
 * rake test      => rake
+
+= undo
+* rails destroy <type> <name> <subtypenames>
+** rails destroy controller StaticPags home help
+* bundle exec rake db:rollback
+* bundle exec rage db:migrate VERSION=0
 == README
 
 This README would normally document whatever steps are necessary to get the
