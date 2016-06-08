@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   get 'login' => "sessions#new"
   post "login" => "sessions#create"
-  delete "logout" => 'sessions#detroy"
+  delete "logout" => 'sessions#detroy'
 
   root 'static_pages#home'
 
