@@ -11,17 +11,19 @@ class User < ActiveRecord::Base
   attr_accessor :remember_token
 
   # returns the hash digest of given string
-  def User.digest(string)
+  def self.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST:
                                                   BCrypt::Engine.cost
     BCrypt::Password.create(string,cost: cost)
   end
 
-  # returns a random token
-  def User.new_token
-    SecureRandom.urlsafe_base64
-  end  
-
+  class << self
+    # returns a random token
+    def new_token
+      SecureRandom.urlsafe_base64
+    end  
+  end
+ 
   # remembers a suer in the databse for use in persistent sessions
   def remember
     self.remember_token = User.new_token
