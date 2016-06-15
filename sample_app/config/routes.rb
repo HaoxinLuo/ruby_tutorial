@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   get 'signup'  => 'users#new'
   get 'help'    => 'static_pages#help'
   get 'about'   => 'static_pages#about'
