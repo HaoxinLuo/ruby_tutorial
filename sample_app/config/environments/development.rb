@@ -41,7 +41,7 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  #host = 'localhost:8000'
-  host = '10.0.2.15:8000'
+  host = 'localhost:8000'
+  #host = '10.0.2.15:8000'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 end
