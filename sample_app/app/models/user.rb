@@ -73,6 +73,10 @@ class User < ActiveRecord::Base
     reset_send_at < 2.hours.ago
   end
 
+  def feed
+    Micropost.where("user_id =  ?", id)
+  end
+
   private
   
   def downcase_email
